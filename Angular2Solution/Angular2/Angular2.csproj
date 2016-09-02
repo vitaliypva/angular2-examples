@@ -69,7 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.component.css" />
-    <Content Include="app\app.component.html" />
+    <Content Include="app\heroes.component.html" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
     <Content Include="typings.json" />
@@ -104,8 +104,14 @@
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.spec.ts" />
     <TypeScriptCompile Include="app\app.component.ts" />
+    <TypeScriptCompile Include="app\app.routing.ts" />
+    <TypeScriptCompile Include="app\heroes.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\hero-detail.component.ts" />
+    <TypeScriptCompile Include="app\hero.service.ts" />
+    <TypeScriptCompile Include="app\hero.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\mock-heroes.ts" />
     <TypeScriptCompile Include="e2e\app.e2e-spec.ts" />
     <TypeScriptCompile Include="typings\globals\angular-protractor\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\core-js\index.d.ts" />
