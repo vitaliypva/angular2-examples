@@ -7,5 +7,11 @@
     </li>
 </ul>
 
-<my-hero-detail [hero]="selectedHero"></my-hero-detail>
-<!--<input *ngIf="selectedHero" type="button" [value]="selectedHero.name"/>-->
+<div *ngIf="selectedHero">
+    <h2>
+        {{selectedHero.name | uppercase}} is my hero
+    </h2>
+    <a routerLink="/detail/{{selectedHero.id}}">View Details</a>
+    <button (click)="gotoDetail()">View Details</button>
+</div>
+
