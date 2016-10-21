@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 import { HttpModule }    from '@angular/http';
 
-import { InMemoryWebApiModule } from 'angular2-in-memory-web-api';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api/in-memory-web-api.module';
 import { InMemoryDataService }  from './in-memory-data.service';
 
 import { HeroService }  from './hero.service';
@@ -23,6 +23,6 @@ import {routing} from "./app.routing";
     ],
     declarations: [AppComponent, HeroDetailComponent, HeroesComponent, DashboardComponent],
     providers: [HeroService],
-  bootstrap: [ AppComponent ]
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

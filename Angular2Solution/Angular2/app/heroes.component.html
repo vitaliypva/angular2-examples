@@ -12,6 +12,6 @@
         {{selectedHero.name | uppercase}} is my hero
     </h2>
     <a routerLink="/detail/{{selectedHero.id}}">View Details</a>
-    <button (click)="gotoDetail()">View Details</button>
+    <button (click)="gotoDetail(selectedHero)">View Details</button>
 </div>
 
